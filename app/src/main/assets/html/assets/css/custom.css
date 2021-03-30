@@ -1,0 +1,245 @@
+/* PLACE YOU CUSTOM STYLES IN THIS FILE */
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #555;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: rgba(14, 14, 14, 0.9);
+    border: 1px solid #fff;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+-moz-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+
+-moz-scrollbar-track {
+    background: #555;
+}
+
+/* Handle */
+
+-moz-scrollbar-thumb {
+    background: rgba(14, 14, 14, 0.9);
+    border: 1px solid #fff;
+}
+
+/* Handle on hover */
+
+-moz-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#searchIcon {
+    cursor: pointer;
+}
+
+.marc {
+    font-family: "Marcellus SC", serif;
+    font-weight: 600;
+}
+
+.menu-group::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 50%;
+    width: 3px;
+    height: 3px;
+    margin-left: -1px;
+    border-radius: 1.5px;
+    -webkit-box-shadow: 5px 0 0 0, -5px 0 0 0, inset 0 0 0 3px;
+    box-shadow: 5px 0 0 0, -5px 0 0 0, inset 0 0 0 3px;
+    opacity: .4;
+    -webkit-transition: .2s opacity;
+    -o-transition: .2s opacity;
+    transition: .2s opacity;
+}
+
+@media (max-width: 1199px) {
+    .hidden-md {
+        display: none;
+    }
+}
+
+.nk-post-text strong, .nk-post-text h3 {
+    color: #e08821 !important;
+}
+
+.nk-post-thumb>a::after {
+    -webkit-box-shadow: inset 0 0 150px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 150px 30px rgba(0, 0, 0, 0.2);
+}
+
+.nk-blog-post .nk-post-thumb img {
+    min-height: 200px;
+    object-fit: cover;
+    object-position: center;
+    font-family: 'object-fit: cover; object-position: center;'
+}
+
+.fav-bg {
+    height: 100%;
+    background-color: #0e0e0e;
+}
+
+.nk-pagination .fa-angle-double-right {
+    margin-top: 6px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.nk-pagination .fa-angle-double-left {
+    margin-top: 6px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+ul.breadcrumb {
+    display: none;
+}
+
+.container .nk-breadcrumbs {
+    padding: 0px;
+    padding-bottom: 20px;
+}
+
+.container .nk-breadcrumbs ul>li>a {
+    padding: 0 5px;
+    color: #e08821 !important;
+}
+
+.side-menu li.active>a {
+    color: #e08821;
+}
+
+.table a.desc:after {
+    display: none;
+    font-family: "Font Awesome 5 Solid";
+    content: "\f107";
+}
+
+.table a.asc:after {
+    display: none;
+    content: "\f106";
+    font-family: "Font Awesome 5 Solid";
+}
+
+.lighter-input .form-control {
+    background-color: #222;
+}
+
+.popover {
+    background-color: #222;
+}
+
+.bs-popover-auto[x-placement^=right] .arrow::after, .bs-popover-right .arrow::after {
+    border-right-color: #222;
+}
+
+.img-thumbnail {
+    display: inline-block;
+    width: 100% \9;
+    max-width: 100%;
+    height: auto;
+    padding: 4px;
+    line-height: 1.42857143;
+    /*   
+   background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+*/
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.karakter-text {
+    text-align: center;
+    font-style: italic;
+    position: relative;
+}
+
+.karakter-text .description {
+    margin-bottom: 10px;
+}
+
+.karakter-text .description::before {
+    content: "\201C";
+    position: absolute;
+    top: -40px;
+    left: -15px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 100px;
+    font-weight: 600;
+    line-height: 135px;
+    opacity: .08;
+    /*z-index: -1;*/
+}
+
+.fav-gray {
+    color: #9f9f9f;
+}
+
+.nk-post-text h4 {
+    color: #e08821;
+}
+
+.nk-navbar.nk-navbar-top .nk-nav-logo {
+    display: block !important;
+    width: 130px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: #fd7e14;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-bottom: 30px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+.nk-title-back {
+    font-size: 4rem;
+}

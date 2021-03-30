@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="_nK">
+    <title>Mithrill</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- START: Styles -->
+
+    <!-- Google Fonts -->
+    <link href="assets/fonts/fonts.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="assets/vendor/font-awesome/web-fonts-with-css/css/fontawesome.min.css">
+
+    <!-- IonIcons -->
+    <link rel="stylesheet" href="assets/vendor/ionicons/css/ionicons.min.css">
+
+    <!-- Revolution Slider -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/revolution/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/revolution/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/revolution/css/navigation.css">
+
+    <!-- Flickity -->
+    <link rel="stylesheet" href="assets/vendor/flickity/dist/flickity.min.css">
+
+    <!-- Photoswipe -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/photoswipe/dist/photoswipe.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/photoswipe/dist/default-skin/default-skin.css">
+
+    <!-- DateTimePicker -->
+    <link rel="stylesheet" type="text/css"
+        href="assets/vendor/jquery-datetimepicker/build/jquery.datetimepicker.min.css">
+
+    <!-- Summernote -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/summernote/dist/summernote-bs4.css">
+
+    <!-- GODLIKE -->
+    <link rel="stylesheet" href="assets/css/godlike.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- END: Styles -->
+
+    <!-- jQuery -->
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+
+
+</head>
+
+<!--
+    Additional Classes:
+        .nk-page-boxed
+-->
+
+<body>
+    <!-- START: Page Preloader -->
+    <div class="nk-preloader">
+        <!--
+         Preloader animation
+         data-close-... data used for closing preloader
+         data-open-...  data used for opening preloader
+    -->
+        <div class="nk-preloader-bg" style="background-color: #000;" data-close-frames="23" data-close-speed="1.2"
+            data-close-sprites="./assets/images/preloader-bg.png" data-open-frames="23" data-open-speed="1.2"
+            data-open-sprites="./assets/images/preloader-bg-bw.png">
+        </div>
+
+        <div class="nk-preloader-content">
+            <div>
+                <img class="nk-img" src="assets/images/cim3.png" alt="Mithrill" width="270">
+                <div class="nk-preloader-animation"></div>
+            </div>
+        </div>
+
+        <div class="nk-preloader-skip">Skip</div>
+    </div>
+    <!-- END: Page Preloader -->
+
+
+    <!--
+    START: Page Background
+
+    data-video attribute supports Youtube and Vimeo urls.
+    also supported self hosted videos, example:
+    data-video="mp4:./video/local-video.mp4,webm:./video/local-video.webm,ogv:./video/local-video.ogv"
+-->
+    <div class="nk-page-background op-5" data-video="mp4:assets/video/bg-2.mp4"
+        style="background-image: url('assets/images/page-background.jpg');"></div>
+    <!-- END: Page Background -->
+
+    <!-- START: Page Border -->
+    <div class="nk-page-border">
+        <div class="nk-page-border-t"></div>
+        <div class="nk-page-border-r"></div>
+        <div class="nk-page-border-b"></div>
+        <div class="nk-page-border-l"></div>
+    </div>
+    <!-- END: Page Border -->
+
+    <!--
+    Additional Classes:
+        .nk-header-opaque
+    -->
+    <header class="nk-header nk-header-opaque">
+
+        <!--
+        START: Navbar
+
+        Additional Classes:
+            .nk-navbar-sticky
+            .nk-navbar-transparent
+            .nk-navbar-autohide
+            .nk-navbar-light
+            .nk-navbar-no-link-effect
+        -->
+        <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-transparent nk-navbar-autohide">
+            <div class="container">
+                <div class="nk-nav-table">
+
+                    <a href="index.html" class="nk-nav-logo">
+                        <img src="assets/images/cim3.png" alt="" width="130">
+                    </a>
+
+                    <ul class="nk-nav nk-nav-right nk-nav-icons">
+                        <li class="single-icon">
+                            <a href="#" class="no-link-effect" data-nav-toggle="#nk-side-menu">Menü</a>
+                        </li>
+
+                        <!--
+                    <li class="single-icon">
+                        <a href="#" class="no-link-effect" data-nav-toggle="#nk-side-konyv">Könyv</a>
+                    </li>
+                    -->
+
+                        <li class="single-icon">
+                            <a href="#" class="no-link-effect" data-nav-toggle="#nk-side-bestiarium">Bestiárium</a>
+                        </li>
+
+                        <li class="single-icon">
+                            <a href="#" class="nk-search-toggle no-link-effect">
+                                <span class="nk-icon-search"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END: Navbar -->
+
+    </header>
+
+    <!--
+    START: Left Navbar
+
+    Additional Classes:
+        .nk-navbar-right-side
+        .nk-navbar-left-side
+        .nk-navbar-lg
+        .nk-navbar-align-center
+        .nk-navbar-align-right
+        .nk-navbar-overlay-content
+        .nk-navbar-light
+        .nk-navbar-no-link-effect
+    -->
+
+    <nav class="nk-navbar nk-navbar-side nk-navbar-left-side nk-navbar-align-center nk-navbar-overlay-content"
+        id="nk-side-menu">
+
+        <div class="nano">
+            <div class="nano-content">
+                <div class="nk-nav-table">
+
+                    <div class="nk-nav-row">
+                        <a href="index.html" class="nk-nav-logo-nem">
+                            <img src="assets/images/cim3.png" alt="Mithrill" width="150">
+                        </a>
+                        <h4>Főmenü</h4>
+                    </div>
+
+                    <div class="nk-nav-row nk-nav-row-full nk-nav-row-center">
+                        <ul class="nk-nav">
+                            <li class=" ">
+                                <a href="szabalykonyv.html">
+                                    Szabálykönyv</a>
+                            </li>
+                            <li class=" ">
+                                <a href="probadobas.html">
+                                    Próbadobás</a>
+                            </li>
+                            <li class=" ">
+                                <a href="szerencse.html">
+                                    Szerencse Dobás</a>
+                            </li>
+                            <li class=" ">
+                                <a href="terkepek.html">
+                                    Térképek</a>
+                            </li>
+                            <li class=" ">
+                                <a href="#" data-nav-toggle="#nk-side-bestiarium">Bestiárium</a>
+                            </li>
+                            <li class=" ">
+                                <a href="rolunk.html">
+                                    Rólunk</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nk-nav-row">
+                        <div class="nk-nav-footer">
+                            Powered By <span class="text-main-1">GrandCMS</span><br> Mithrill © 2019
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Left Navbar -->
+
+    <!--
+    START: Right Navbar
+
+    Additional Classes:
+        .nk-navbar-right-side
+        .nk-navbar-left-side
+        .nk-navbar-lg
+        .nk-navbar-align-center
+        .nk-navbar-align-right
+        .nk-navbar-overlay-content
+        .nk-navbar-light
+        .nk-navbar-no-link-effect
+    -->
+
+    <nav class="nk-navbar nk-navbar-side nk-navbar-right-side nk-navbar-lg nk-navbar-align-center nk-navbar-overlay-content"
+        id="nk-side-konyv">
+
+        <div class="nk-navbar-bg">
+            <div class="bg-image">
+                <img src="assets/images/bg-konyv.jpg" alt="" class="jarallax-img">
+            </div>
+        </div>
+
+        <div class="nano">
+            <div class="nano-content">
+                <div class="nk-nav-table">
+                    <div class="nk-nav-row">
+                        <a href="index.html" class="nk-nav-logo-nem">
+                            <img src="assets/images/cim3.png" alt="Mithrill" width="150">
+                        </a>
+                        <h4>Szabálykönyv</h4>
+                    </div>
+                    <div class="nk-nav-row nk-nav-row-full nk-nav-row-center">
+                        <ul class="nk-nav">
+                            <li class=" ">
+                                <a href="szabalykonyv.html">
+                                    Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nk-nav-row">
+                        <div class="nk-nav-footer">
+                            Powered By <span class="text-main-1">GrandCMS</span><br> Mithrill © 2019
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Right Navbar -->
+
+    <!--
+    START: Right Navbar
+
+    Additional Classes:
+        .nk-navbar-right-side
+        .nk-navbar-left-side
+        .nk-navbar-lg
+        .nk-navbar-align-center
+        .nk-navbar-align-right
+        .nk-navbar-overlay-content
+        .nk-navbar-light
+        .nk-navbar-no-link-effect
+    -->
+
+    <nav class="nk-navbar nk-navbar-side nk-navbar-right-side nk-navbar-lg nk-navbar-align-center nk-navbar-overlay-content"
+        id="nk-side-bestiarium">
+
+        <div class="nk-navbar-bg">
+            <div class="bg-image">
+                <img src="assets/images/mbook2.jpg" alt="" class="jarallax-img">
+            </div>
+        </div>
+
+        <div class="nano">
+            <div class="nano-content">
+                <div class="nk-nav-table">
+
+                    <div class="nk-nav-row">
+                        <a href="index.html" class="nk-nav-logo-nem">
+                            <img src="assets/images/cim3.png" alt="Mithrill" width="150">
+                        </a>
+                        <h4>Bestiárium</h4>
+                    </div>
+
+                    <div class="nk-nav-row nk-nav-row-full nk-nav-row-center">
+                        <ul class="nk-nav">
+                            <li class=" ">
+                                <a href="bestiarium/profiBergyilkos.html">
+                                    Profi Bérgyilkos</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nk-nav-row">
+                        <div class="nk-nav-footer">
+                            Powered By <span class="text-main-1">GrandCMS</span><br> Mithrill © 2019
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Right Navbar -->

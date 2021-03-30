@@ -1,0 +1,96 @@
+<div class="nk-main">
+    <!-- START: Header Title -->
+    <!--
+            Additional Classes:
+                .nk-header-title-sm
+                .nk-header-title-md
+                .nk-header-title-lg
+                .nk-header-title-xl
+                .nk-header-title-full
+                .nk-header-title-parallax
+                .nk-header-title-parallax-opacity
+                .nk-header-title-boxed
+        -->
+    <div class="nk-header-title-parallax nk-header-title-parallax-opacity">
+        <div class="bg-image op-7">
+            <img src="assets/images/szabalykonyv/gamble.jpg" alt="" class="jarallax-img">
+        </div>
+        <div class="nk-header-table">
+            <div class="nk-header-table-cell">
+                <div class="container">
+                    <div class="text-left">
+                        <h3 class="nk-title-back">Segédlet</h3>
+                        <h2 class="nk-title h1">Általános Próbadobás</h2>
+                    </div>
+                </div>
+                <div class="nk-gap-4"></div>
+                <div class="nk-gap-4"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END: Header Title -->
+
+
+    <div class="container nk-blog-container-offset">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- START: Post -->
+                <div class="bg-dark-1">
+                    <!-- START: Post Text -->
+                    <div class="nk-post-text mt-0 align-justify">
+
+                        <h4>Próbadobás</h4>
+
+                        <h5>Kockák: <span id="kockak">5</span></h5>
+
+                        <div class="slidecontainer"><input class="slider" id="kockak-slider" max="15" min="1"
+                                type="range" value="5" /></div>
+
+                        <h5>Célszám: <span id="celszam">3</span></h5>
+
+                        <div class="slidecontainer"><input class="slider" id="celszam-slider" max="5" min="1"
+                                type="range" value="3" /></div>
+
+                        <h5>Sikerek: <span id="sikerek"></span></h5>
+                        <button class="nk-btn nk-btn-lg" id="kocka-btn">Dobás</button>
+                    </div>
+                    <!-- END: Post Text -->
+                </div>
+                <!-- END: Post -->
+                <div class="nk-gap-3"></div>
+                <div id="gallery-0" class="nk-popup-gallery nk-popup-gallery-3-col nk-isotope">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- END: main -->
+
+<script src="assets/js/dobasok.js"></script>
+
+<script>
+    $('#kockak-slider').on('input', function () {
+        $('#kockak').html($(this).val());
+    });
+    $('#celszam-slider').on('input', function () {
+        $('#celszam').html($(this).val());
+    });
+    $('#kocka-btn').on('click', function () {
+        let sikerek = 0;
+        let kockakArray = [];
+        let kockak = $('#kockak-slider').val();
+        let celszam = $('#celszam-slider').val();
+
+        for (let i = 0; i < kockak; i++) {
+            let dobas = Math.floor(Math.random() * 6) + 1;
+            kockakArray.push(dobas);
+            if (dobas <= celszam) sikerek++;
+        }
+        $('#sikerek').html(sikerek + ' ( ' + kockakArray.join(', ') + ' )');
+
+        playDobas(sikerek);
+
+    });
+</script>

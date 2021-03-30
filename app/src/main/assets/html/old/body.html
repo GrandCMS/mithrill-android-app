@@ -1,0 +1,175 @@
+<div class="nk-main">
+
+
+    <!-- START: Header Title -->
+    <!--
+    Additional Classes:
+        .nk-header-title-sm
+        .nk-header-title-md
+        .nk-header-title-lg
+        .nk-header-title-xl
+        .nk-header-title-full
+        .nk-header-title-parallax
+        .nk-header-title-parallax-opacity
+        .nk-header-title-boxed
+-->
+    <div class="nk-header-title nk-header-title-lg nk-header-title-parallax nk-header-title-parallax-opacity">
+        <div class="bg-image">
+            <img src="assets/images/szornyek/Dragon-fantasy-art-photos.jpg" alt="" class="jarallax-img">
+        </div>
+        <div class="nk-header-table">
+            <div class="nk-header-table-cell">
+                <div class="container">
+
+                    <div class="nk-header-text">
+
+                        <h1 class="nk-title display-3">Üdvözöllek Mithrill világán</h1>
+
+                        <import>test.html</import>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- END: Header Title -->
+
+
+
+    <!-- START: Rev Slider -->
+    <div class="mnt-80">
+        <div id="rev_slider_50_1_wrapper" class="rev_slider_wrapper fullscreen-container"
+            data-alias="photography-carousel48" style="padding:0px;">
+            <div id="rev_slider_50_1" class="rev_slider fullscreenbanner" style="display:none;"
+                data-version="5.0.7">
+                <ul>
+                    <!-- SLIDE  -->
+                    <li data-index="rs-185" data-transition="slideoverhorizontal" data-slotamount="7"
+                        data-easein="default" data-easeout="default" data-masterspeed="1500"
+                        data-thumb="assets/images/szornyek/angel1.jpg" data-rotate="0" data-saveperformance="off">
+                        <!-- MAIN IMAGE -->
+                        <img src="assets/images/szornyek/angel1.jpg" alt="" data-bgposition="center center"
+                            data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                    </li>
+                    <!-- SLIDE  -->
+                    <li data-index="rs-192" data-transition="slideoververtical" data-slotamount="7"
+                        data-easein="default" data-easeout="default" data-masterspeed="1500"
+                        data-thumb="assets/images/szornyek/thief.jpg" data-rotate="0" data-saveperformance="off">
+                        <!-- MAIN IMAGE -->
+                        <img src="assets/images/szornyek/thief.jpg" alt="" data-bgposition="center center"
+                            data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                    </li>
+                    <!-- SLIDE  -->
+                    <li data-index="rs-186" data-transition="slideoverhorizontal" data-slotamount="7"
+                        data-easein="default" data-easeout="default" data-masterspeed="1500"
+                        data-thumb="assets/images/szornyek/dragon1.jpg" data-rotate="0" data-saveperformance="off">
+                        <!-- MAIN IMAGE -->
+                        <img src="assets/images/szornyek/dragon1.jpg" alt="" data-bgposition="center center"
+                            data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                    </li>
+                    <!-- SLIDE  -->
+                    <li data-index="rs-183" data-transition="slideoververtical" data-slotamount="7"
+                        data-easein="default" data-easeout="default" data-masterspeed="1500"
+                        data-thumb="assets/images/szornyek/nomad1.jpg" data-rotate="0" data-fstransition="fade"
+                        data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off">
+                        <!-- MAIN IMAGE -->
+                        <img src="assets/images/szornyek/nomad1.jpg" alt="" data-bgposition="center center"
+                            data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                    </li>
+                </ul>
+                <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Rev Slider -->
+
+
+    <!-- START: text Block 4 -->
+    <div class="nk-box text-xs-center text-white">
+        <div class="nk-gap-5"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                    <h2 class="h1 nk-title">Mithrill egy szerepjáték.</h2>
+                    <div class="nk-gap"></div>
+                    <p>A számítógépek elterjedése előtt élték virágkorukat a szerepjátékok.<br>
+                        Egy olyan tartalmas szórakozás, mely elkísérhet egész életedben, ha te is úgy akarod. Nem
+                        számít hány éves vagy, fiú avagy lány lennél, mindig megtalálhatod a szerepjátékban azt amit
+                        keresel. Ha hőst akarsz alakítani, megteheted, ha valami mást, azt is. Egy a fontos, hogy te
+                        jól érezd magad.
+                    </p>
+
+                    <import>test2.html</import>
+                </div>
+            </div>
+        </div>
+        <div class="nk-gap-5"></div>
+        <div class="nk-gap-4"></div>
+    </div>
+    <!-- END: text Block 4 -->
+
+</div>
+
+<script type="text/javascript">
+    var tpj = jQuery;
+    var revapi50;
+    tpj(document).ready(function () {
+        if (tpj("#rev_slider_50_1").revolution == undefined) {
+            revslider_showDoubleJqueryError("#rev_slider_50_1");
+        } else {
+            revapi50 = tpj("#rev_slider_50_1").show().revolution({
+                sliderType: "carousel",
+                jsFileLocation: "assets/vendor/revolution/js/",
+                sliderLayout: "auto",
+                dottedOverlay: "none",
+                delay: 9000,
+                navigation: {
+                    keyboardNavigation: "off",
+                    keyboard_direction: "horizontal",
+                    onHoverStop: "off",
+                },
+                carousel: {
+                    maxRotation: 8,
+                    vary_rotation: "off",
+                    minScale: 20,
+                    vary_scale: "off",
+                    horizontal_align: "center",
+                    vertical_align: "center",
+                    fadeout: "off",
+                    vary_fade: "off",
+                    maxVisibleItems: 3,
+                    infinity: "on",
+                    space: -90,
+                    stretch: "off"
+                },
+                responsiveLevels: [1240, 1024, 778, 480],
+                gridwidth: [800, 600, 400, 320],
+                gridheight: [600, 400, 320, 280],
+                lazyType: "none",
+                shadow: 0,
+                spinner: "off",
+                stopLoop: "on",
+                stopAfterLoops: 0,
+                stopAtSlide: 0,
+                shuffle: "off",
+                autoHeight: "off",
+                fullScreenAlignForce: "off",
+                fullScreenOffsetContainer: "",
+                fullScreenOffset: "",
+                disableProgressBar: "on",
+                hideThumbsOnMobile: "off",
+                hideSliderAtLimit: 0,
+                hideCaptionAtLimit: 0,
+                hideAllCaptionAtLilmit: 0,
+                debugMode: false,
+                fallbacks: {
+                    simplifyAll: "off",
+                    nextSlideOnWindowFocus: "off",
+                    disableFocusListener: false,
+                }
+            });
+        }
+    });
+</script>

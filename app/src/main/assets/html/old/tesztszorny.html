@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Mithrill</title>
+    <link href="assets/fonts/fonts.css" rel="stylesheet">
+
+    <!-- START: Styles -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300i,400,700%7cMarcellus+SC" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="assets/bower_components/fontawesome/css/font-awesome.min.css">
+
+    <!-- IonIcons -->
+    <link rel="stylesheet" href="assets/bower_components/ionicons/css/ionicons.min.css">
+
+    <!-- Revolution Slider -->
+    <link rel="stylesheet" type="text/css" href="assets/plugins/revolution/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/revolution/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/revolution/css/navigation.css">
+
+    <!-- Flickity -->
+    <link rel="stylesheet" href="assets/bower_components/flickity/dist/flickity.min.css">
+
+    <!-- Photoswipe -->
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/photoswipe/dist/photoswipe.css">
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/photoswipe/dist/default-skin/default-skin.css">
+
+    <!-- DateTimePicker -->
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/datetimepicker/build/jquery.datetimepicker.min.css">
+
+    <!-- Revolution Slider -->
+    <link rel="stylesheet" type="text/css" href="assets/plugins/revolution/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/revolution/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/revolution/css/navigation.css">
+
+    <!-- Prism -->
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/prism/themes/prism-tomorrow.css">
+
+    <!-- Summernote -->
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/summernote/dist/summernote.css">
+
+    <!-- GODLIKE -->
+    <link rel="stylesheet" href="assets/css/godlike.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- END: Styles -->
+
+    <!-- jQuery -->
+    <script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+	
+	<style>
+	/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #555;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(14, 14, 14, 0.9);
+	border: 1px solid #fff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+-moz-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+-moz-scrollbar-track {
+    background: #555;
+}
+
+/* Handle */
+-moz-scrollbar-thumb {
+    background: rgba(14, 14, 14, 0.9);
+	border: 1px solid #fff;
+}
+
+/* Handle on hover */
+-moz-scrollbar-thumb:hover {
+    background: #555; 
+}
+</style>
+
+
+
+</head>
+
+
+<!--
+    Additional Classes:
+        .nk-page-boxed
+-->
+
+<body>
+    <!-- START: Page Preloader -->
+    <div class="nk-preloader">
+        <!--
+         Preloader animation
+         data-close-... data used for closing preloader
+         data-open-...  data used for opening preloader
+    -->
+        <div class="nk-preloader-bg" style="background-color: #000;" data-close-frames="23" data-close-speed="1.2" data-close-sprites="./assets/images/preloader-bg.png" data-open-frames="23" data-open-speed="1.2" data-open-sprites="./assets/images/preloader-bg-bw.png">
+        </div>
+
+        <div class="nk-preloader-content">
+            <div>
+                <img class="nk-img" src="assets/images/cim3.png" alt="Mithrill" width="170">
+                <div class="nk-preloader-animation"></div>
+            </div>
+        </div>
+
+        <div class="nk-preloader-skip">Skip</div>
+    </div>
+    <!-- END: Page Preloader -->
+
+
+    <!-- START: Page Background -->
+    <div class="nk-page-background op-5" data-bg-mp4="assets/video/bg-2.mp4" data-bg-webm="assets/video/bg-2.webm" data-bg-ogv="assets/video/bg-2.ogv" data-bg-poster="assets/video/bg-2.jpg"></div>
+    <!-- END: Page Background -->
+
+
+
+    <!-- START: Page Border -->
+    <div class="nk-page-border">
+        <div class="nk-page-border-t"></div>
+        <div class="nk-page-border-r"></div>
+        <div class="nk-page-border-b"></div>
+        <div class="nk-page-border-l"></div>
+    </div>
+    <!-- END: Page Border -->
+
+
+
+
+
+
+
+    <!--
+    Additional Classes:
+        .nk-header-opaque
+-->
+    <header class="nk-header nk-header-opaque">
+
+
+
+        <!--
+    START: Top Contacts
+
+    Additional Classes:
+        .nk-contacts-top-light
+-->
+        <!-- END: Top Contacts -->
+
+
+
+        <!--
+        START: Navbar
+
+        Additional Classes:
+            .nk-navbar-sticky
+            .nk-navbar-transparent
+            .nk-navbar-autohide
+            .nk-navbar-light
+            .nk-navbar-no-link-effect
+    -->
+        <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-autohide">
+            <div class="container">
+                <div class="nk-nav-table">
+
+                    <a href="index.html" class="nk-nav-logo">
+                        <img src="assets/images/cim3.png" alt="" width="130">
+                    </a>
+                    <ul class="nk-nav nk-nav-right hidden-md-down" data-nav-mobile="#nk-nav-mobile">
+                        <li class="  ">
+                            <a href="index.html">Kezdőlap</a>
+                        </li>
+						<li class="  ">
+                            <a href="terkepek.html">Térképek</a>
+                        </li>
+						<li class="  ">
+                            <a href="tesztszorny.html">Szörnyek</a>
+                        </li>
+                        <li class="  ">
+                            <a href="http://forum.mithrill.grandcms.com/">Fórum</a>
+                        </li>
+                    </ul>
+
+                    <ul class="nk-nav nk-nav-right nk-nav-icons">
+
+                        <li class="single-icon hidden-lg-up">
+                            <a href="#" class="no-link-effect" data-nav-toggle="#nk-nav-mobile">
+                                <span class="nk-icon-burger">
+                                    <span class="nk-t-1"></span>
+                                    <span class="nk-t-2"></span>
+                                    <span class="nk-t-3"></span>
+                                </span>
+                            </a>
+                        </li>
+
+
+
+                        <li class="single-icon">
+                            <a href="#" class="nk-search-toggle no-link-effect">
+                                <span class="nk-icon-search"></span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END: Navbar -->
+
+    </header>
+
+
+
+
+
+
+
+
+    
+
+
+
+    <!--
+    START: Navbar Mobile
+
+    Additional Classes:
+        .nk-navbar-left-side
+        .nk-navbar-right-side
+        .nk-navbar-lg
+        .nk-navbar-overlay-content
+        .nk-navbar-light
+        .nk-navbar-no-link-effect
+-->
+    <div id="nk-nav-mobile" class="nk-navbar nk-navbar-side nk-navbar-left-side nk-navbar-overlay-content hidden-lg-up">
+        <div class="nano">
+            <div class="nano-content">
+                <a href="index.html" class="nk-nav-logo">
+                    <img src="assets/images/cim3.png" alt="" width="130">
+                </a>
+                <div class="nk-navbar-mobile-content">
+                    <ul class="nk-nav">
+                        <!-- Here will be inserted menu from [data-mobile-menu="#nk-nav-mobile"] -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Navbar Mobile -->
+
+
+
+    <div class="nk-main">
+	
+       <div class="container">
+			
+			<div class="text-xs-right text-main-1">
+                <h3 class="nk-title-back">Bérgyilkosok</h3>
+                <h2 class="nk-title">Rutinos Bérgyilkos</h2>
+            </div>
+			
+			
+	   
+			<div class="row">
+			
+				<div class="col-md-6">
+
+					<!-- START: Gallery List -->
+					<div class="nk-popup-gallery">
+
+						<div style="width: 100%;" class="nk-gallery-item-box" data-mouse-parallax-z="5" data-mouse-parallax-speed="1">
+							<a href="assets/images/szornyek/thief.jpg" class="nk-gallery-item" data-size="1920x1200">
+								<img src="assets/images/szornyek/thief.jpg" alt="">
+							</a>
+						</div>
+
+						
+					</div>
+					<!-- END: Gallery List -->
+				</div>
+				
+				<div class="col-md-6">
+					<p>A fejvadászok különleges alvilági figurák. Pénzért felbérelhető precíz munkát végző bérgyilkosoknak is hívhatjuk őket. Általában egyedül dolgoznak, így feltűnésmentesek tudnak maradni. Türelmesen kifigyelik áldozatukat, annak rutinjait, szokásait. Majd egy alkalmas pillanatban lecsapnak, ha kell orvlövészként, ha kell egy lehulló tégla képében.</p>
+				</div>
+			
+			</div>
+			
+			<div class="row">
+			
+                    <div class="col-md-4">
+						<h4 class="text-main-1">Tulajdonságok</h4>
+                        <div class="nk-progress nk-progress-xs nk-count" data-progress="45">
+                            <div class="nk-progress-title">Erő</div>
+                            <div class="nk-progress-line">
+                                <div class="bg-main-1" style="width: 45%;">
+                                    <div>4-5</div>
+                                </div>
+                            </div>
+                        </div>
+						<div class="nk-progress nk-progress-xs nk-count" data-progress="30">
+                            <div class="nk-progress-title">Egészség</div>
+                            <div class="nk-progress-line">
+                                <div class="bg-main-1" style="width: 30%;">
+                                    <div>2-4</div>
+                                </div>
+                            </div>
+                        </div>
+						<div class="nk-progress nk-progress-xs nk-count" data-progress="45">
+                            <div class="nk-progress-title">Test</div>
+                            <div class="nk-progress-line">
+                                <div class="bg-main-1" style="width: 45%;">
+                                    <div>4-5</div>
+                                </div>
+                            </div>
+                        </div>
+						<div class="nk-progress nk-progress-xs nk-count" data-progress="60">
+                            <div class="nk-progress-title">Gyorsaság</div>
+                            <div class="nk-progress-line">
+                                <div class="bg-main-1" style="width: 60%;">
+                                    <div>5-7</div>
+                                </div>
+                            </div>
+                        </div>
+						<div class="nk-progress nk-progress-xs nk-count" data-progress="65">
+                            <div class="nk-progress-title">Ügyesség</div>
+                            <div class="nk-progress-line">
+                                <div class="bg-main-1" style="width: 65%;">
+                                    <div>6-7</div>
+                                </div>
+                            </div>
+                        </div>
+						<div class="nk-progress nk-progress-xs nk-count" data-progress="55">
+                            <div class="nk-progress-title">Intelligencia</div>
+                            <div class="nk-progress-line">
+                                <div class="bg-main-1" style="width: 55%;">
+                                    <div>5-6</div>
+                                </div>
+                            </div>
+                        </div>
+						<div class="nk-progress nk-progress-xs nk-count" data-progress="45">
+                            <div class="nk-progress-title">Akaraterő</div>
+                            <div class="nk-progress-line">
+                                <div class="bg-main-1" style="width: 45%;">
+                                    <div>4-5</div>
+                                </div>
+                            </div>
+                        </div>
+						<div class="nk-progress nk-progress-xs nk-count" data-progress="35">
+                            <div class="nk-progress-title">Érzelem</div>
+                            <div class="nk-progress-line">
+                                <div class="bg-main-1" style="width: 35%;">
+                                    <div>3-4</div>
+                                </div>
+                            </div>
+                        </div>
+					</div>
+					
+					<div class="col-md-4">
+						<h4 class="text-main-1">Harci Képzettségek</h4>
+                        <div class="nk-progress nk-progress-xs nk-count" data-progress="45">
+                            <div class="nk-progress-title">Könnyű Fegyverforgatás (Gyors / Ügy)</div>
+                            <div class="nk-progress-line">
+                                <div class="bg-main-1" style="width: 45%;">
+                                    <div>4-5</div>
+                                </div>
+                            </div>
+                        </div>
+						<div class="nk-progress nk-progress-xs nk-count" data-progress="45">
+                            <div class="nk-progress-title">Közepes Fegyverforgatás (Gyors / Ügy)</div>
+                            <div class="nk-progress-line">
+                                <div class="bg-main-1" style="width: 45%;">
+                                    <div>4-5</div>
+                                </div>
+                            </div>
+                        </div>
+						<div class="nk-progress nk-progress-xs nk-count" data-progress="45">
+                            <div class="nk-progress-title">Célzás (Ügy / Akr)</div>
+                            <div class="nk-progress-line">
+                                <div class="bg-main-1" style="width: 45%;">
+                                    <div>4-5</div>
+                                </div>
+                            </div>
+                        </div>
+						<div class="nk-progress nk-progress-xs nk-count" data-progress="40">
+                            <div class="nk-progress-title">Kitérés (Gyors / Ügy)</div>
+                            <div class="nk-progress-line">
+                                <div class="bg-main-1" style="width: 40%;">
+                                    <div>4</div>
+                                </div>
+                            </div>
+                        </div>
+						<div class="nk-progress nk-progress-xs nk-count" data-progress="30">
+                            <div class="nk-progress-title">Vakharc (Ügy / IQ)</div>
+                            <div class="nk-progress-line">
+                                <div class="bg-main-1" style="width: 30%;">
+                                    <div>3</div>
+                                </div>
+                            </div>
+                        </div>
+					</div>
+					<div class="col-md-4">
+						<h4 class="text-main-1">Képzettségek / Képességek</h4>
+                        <div class="nk-progress nk-progress-xs nk-count" data-progress="45">
+                            <div class="nk-progress-title">Alvilági Ismeretek (IQ / Érz)</div>
+                            <div class="nk-progress-line">
+                                <div class="bg-main-1" style="width: 45%;">
+                                    <div>4-5</div>
+                                </div>
+                            </div>
+                        </div>
+						<div class="nk-progress nk-progress-xs nk-count" data-progress="45">
+                            <div class="nk-progress-title">Orvgyilkolás (IQ/Ügy)</div>
+                            <div class="nk-progress-line">
+                                <div class="bg-main-1" style="width: 45%;">
+                                    <div>4-5</div>
+                                </div>
+                            </div>
+                        </div>
+						<div class="nk-progress nk-progress-xs nk-count" data-progress="45">
+                            <div class="nk-progress-title">Osonás (IQ/Ügy)</div>
+                            <div class="nk-progress-line">
+                                <div class="bg-main-1" style="width: 45%;">
+                                    <div>4-5</div>
+                                </div>
+                            </div>
+                        </div>
+						<div class="nk-progress nk-progress-xs nk-count" data-progress="45">
+                            <div class="nk-progress-title">Álcázás (IQ/Ügy)</div>
+                            <div class="nk-progress-line">
+                                <div class="bg-main-1" style="width: 45%;">
+                                    <div>4-5</div>
+                                </div>
+                            </div>
+                        </div>
+						<div class="nk-progress nk-progress-xs nk-count" data-progress="45">
+                            <div class="nk-progress-title">Mérgek (IQ)</div>
+                            <div class="nk-progress-line">
+                                <div class="bg-main-1" style="width: 45%;">
+                                    <div>4-5</div>
+                                </div>
+                            </div>
+                        </div>
+						<div class="nk-progress nk-progress-xs nk-count" data-progress="40">
+                            <div class="nk-progress-title">Csapdák, Titkos ajtók (IQ/Érz)</div>
+                            <div class="nk-progress-line">
+                                <div class="bg-main-1" style="width: 40%;">
+                                    <div>4</div>
+                                </div>
+                            </div>
+                        </div>
+						<div class="nk-progress nk-progress-xs nk-count" data-progress="40">
+                            <div class="nk-progress-title">Éberség (IQ/Érz)</div>
+                            <div class="nk-progress-line">
+                                <div class="bg-main-1" style="width: 40%;">
+                                    <div>4</div>
+                                </div>
+                            </div>
+                        </div>
+						<div class="nk-progress nk-progress-xs nk-count" data-progress="40">
+                            <div class="nk-progress-title">Fájdalom tűrés (Test/Érz)</div>
+                            <div class="nk-progress-line">
+                                <div class="bg-main-1" style="width: 40%;">
+                                    <div>4</div>
+                                </div>
+                            </div>
+                        </div>
+						<div class="nk-progress nk-progress-xs nk-count" data-progress="30">
+                            <div class="nk-progress-title">Nyomolvasás/rejtés (IQ/Ügy)</div>
+                            <div class="nk-progress-line">
+                                <div class="bg-main-1" style="width: 30%;">
+                                    <div>3</div>
+                                </div>
+                            </div>
+                        </div>
+					</div>
+					
+			</div>
+
+
+        </div>
+		
+		<div class="nk-gap-4"></div>
+		<div class="nk-gap-4"></div>
+		
+        <!-- START: Footer -->
+        <!--
+    Additional Classes:
+        .nk-footer-parallax
+        .nk-footer-parallax-opacity
+-->
+        <footer class="nk-footer nk-footer-parallax nk-footer-parallax-opacity">
+            <img class="nk-footer-top-corner" src="assets/images/footer-corner.png" alt="">
+
+
+
+            <div class="container">
+                <div class="nk-gap-2"></div>
+                
+                <div class="nk-gap"></div>
+				
+				<div class="row">
+					<div class="col-sm-3">
+						<p>
+							<strong>Mithrill 2.1</strong><br><br>
+							Írta:<br> Bartos Gábor
+						</p>
+					</div>
+					<div class="col-sm-3">
+						<p>
+							<strong>Továbbá:</strong><br><br>
+							Förhécz Gábor<br>
+							Gajzágó Gergő<br>
+							Hajdú Imre<br>
+							Pekács Milán
+						</p>
+					</div>
+					<div class="col-sm-3">
+						<p>
+							<strong>Továbbá:</strong><br><br>
+							Perl Gábor<br>
+							Porteleki Gábor<br>
+							Sipos József<br>
+							Szanyi Gábor
+						</p>
+					</div>
+					<div class="col-sm-3">
+						<p>
+							<strong>Hétköznapi Hősök</strong><br><br>
+							2004-2016.<br>
+							RIP
+						</p>
+					</div>
+				</div>		
+                <div class="nk-gap-4"></div>
+            </div>
+        </footer>
+        <!-- END: Footer -->
+
+
+    </div>
+
+
+
+ 
+
+
+    <!--
+    START: Side Buttons
+        .nk-side-buttons-visible
+-->
+    <div class="nk-side-buttons nk-side-buttons-visible">
+        <ul>
+            <li>
+                <span class="nk-btn nk-btn-lg nk-btn-icon" onclick="goBack()">
+                    <span class="icon ion-ios-arrow-left"></span>
+                </span>
+            </li>
+            <li class="nk-scroll-top">
+                <span class="nk-btn nk-btn-lg nk-btn-icon">
+                    <span class="icon ion-ios-arrow-up"></span>
+                </span>
+            </li>
+        </ul>
+    </div>
+    <!-- END: Side Buttons -->
+
+
+
+    <!--
+    START: Search
+
+    Additional Classes:
+        .nk-search-light
+-->
+    <div class="nk-search">
+        <div class="container">
+            <form action="#">
+                <fieldset class="form-group nk-search-field">
+                    <input type="text" class="form-control" id="searchInput" placeholder="Search..." name="s">
+                    <label for="searchInput"><i class="ion-ios-search"></i></label>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <!-- END: Search -->
+
+
+
+
+
+    <!-- START: Scripts -->
+
+    <!-- GSAP -->
+    <script src="assets/bower_components/gsap/src/minified/TweenMax.min.js"></script>
+    <script src="assets/bower_components/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/bower_components/tether/dist/js/tether.min.js"></script>
+    <script src="assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Sticky Kit -->
+    <script src="assets/bower_components/sticky-kit/dist/sticky-kit.min.js"></script>
+
+    <!-- Jarallax -->
+    <script src="assets/bower_components/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/bower_components/jarallax/dist/jarallax-video.min.js"></script>
+
+    <!-- Flickity -->
+    <script src="assets/bower_components/flickity/dist/flickity.pkgd.min.js"></script>
+
+    <!-- Isotope -->
+    <script src="assets/bower_components/isotope/dist/isotope.pkgd.min.js"></script>
+
+    <!-- Photoswipe -->
+    <script src="assets/bower_components/photoswipe/dist/photoswipe.min.js"></script>
+    <script src="assets/bower_components/photoswipe/dist/photoswipe-ui-default.min.js"></script>
+
+    <!-- Typed.js -->
+    <script src="assets/bower_components/typed.js/dist/typed.min.js"></script>
+
+    <!-- Jquery Form -->
+    <script src="assets/bower_components/jquery-form/jquery.form.js"></script>
+
+    <!-- Jquery Validation -->
+    <script src="assets/bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
+
+    <!-- Jquery Countdown + Moment -->
+    <script src="assets/bower_components/jquery.countdown/dist/jquery.countdown.min.js"></script>
+    <script src="assets/bower_components/moment/min/moment.min.js"></script>
+    <script src="assets/bower_components/moment-timezone/builds/moment-timezone-with-data.js"></script>
+
+    <!-- Hammer.js -->
+    <script src="assets/bower_components/hammer.js/hammer.min.js"></script>
+
+    <!-- nK Share -->
+    <script src="assets/plugins/nk-share/nk-share.js"></script>
+
+    <!-- NanoSroller -->
+    <script src="assets/bower_components/nanoscroller/bin/javascripts/jquery.nanoscroller.min.js"></script>
+
+    <!-- SoundManager2 -->
+    <script src="assets/bower_components/SoundManager2/script/soundmanager2-nodebug-jsmin.js"></script>
+
+    <!-- DateTimePicker -->
+    <script src="assets/bower_components/datetimepicker/build/jquery.datetimepicker.full.min.js"></script>
+
+    <!-- Revolution Slider -->
+    <script type="text/javascript" src="assets/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+
+    <!-- Keymaster -->
+    <script src="assets/bower_components/keymaster/keymaster.js"></script>
+
+    <!-- Summernote -->
+    <script src="assets/bower_components/summernote/dist/summernote.min.js"></script>
+
+    <!-- Prism -->
+    <script src="assets/bower_components/prism/prism.js"></script>
+
+    <!-- GODLIKE -->
+    <script src="assets/js/godlike.min.js"></script>
+    <script src="assets/js/godlike-init.js"></script>
+    <!-- END: Scripts -->
+
+    <!-- Mithrill -->
+    <script src="assets/js/mithrill.js"></script>
+
+</body>
+
+</html>

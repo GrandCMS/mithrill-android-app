@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="_nK">
+    <title>Mithrill</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- START: Styles -->
+
+    <!-- Google Fonts -->
+    <link href="assets/fonts/fonts.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="assets/vendor/font-awesome/web-fonts-with-css/css/fontawesome.min.css">
+
+    <!-- IonIcons -->
+    <link rel="stylesheet" href="assets/vendor/ionicons/css/ionicons.min.css">
+
+    <!-- Revolution Slider -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/revolution/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/revolution/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/revolution/css/navigation.css">
+
+    <!-- Flickity -->
+    <link rel="stylesheet" href="assets/vendor/flickity/dist/flickity.min.css">
+
+    <!-- Photoswipe -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/photoswipe/dist/photoswipe.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/photoswipe/dist/default-skin/default-skin.css">
+
+    <!-- DateTimePicker -->
+    <link rel="stylesheet" type="text/css"
+        href="assets/vendor/jquery-datetimepicker/build/jquery.datetimepicker.min.css">
+
+    <!-- Summernote -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/summernote/dist/summernote-bs4.css">
+
+    <!-- GODLIKE -->
+    <link rel="stylesheet" href="assets/css/godlike.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- END: Styles -->
+
+    <!-- jQuery -->
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+
+
+</head>
+
+<!--
+    Additional Classes:
+        .nk-page-boxed
+-->
+
+<body>
+    <!-- START: Page Preloader -->
+    <div class="nk-preloader">
+        <!--
+         Preloader animation
+         data-close-... data used for closing preloader
+         data-open-...  data used for opening preloader
+    -->
+        <div class="nk-preloader-bg" style="background-color: #000;" data-close-frames="23" data-close-speed="1.2"
+            data-close-sprites="./assets/images/preloader-bg.png" data-open-frames="23" data-open-speed="1.2"
+            data-open-sprites="./assets/images/preloader-bg-bw.png">
+        </div>
+
+        <div class="nk-preloader-content">
+            <div>
+                <img class="nk-img" src="assets/images/cim3.png" alt="Mithrill" width="270">
+                <div class="nk-preloader-animation"></div>
+            </div>
+        </div>
+
+        <div class="nk-preloader-skip">Skip</div>
+    </div>
+    <!-- END: Page Preloader -->
+
+
+    <!--
+    START: Page Background
+
+    data-video attribute supports Youtube and Vimeo urls.
+    also supported self hosted videos, example:
+    data-video="mp4:./video/local-video.mp4,webm:./video/local-video.webm,ogv:./video/local-video.ogv"
+-->
+    <div class="nk-page-background op-5" data-video="mp4:assets/video/bg-2.mp4"
+        style="background-image: url('assets/images/page-background.jpg');"></div>
+    <!-- END: Page Background -->
+
+    <!-- START: Page Border -->
+    <div class="nk-page-border">
+        <div class="nk-page-border-t"></div>
+        <div class="nk-page-border-r"></div>
+        <div class="nk-page-border-b"></div>
+        <div class="nk-page-border-l"></div>
+    </div>
+    <!-- END: Page Border -->
+
+    <!--
+    Additional Classes:
+        .nk-header-opaque
+    -->
+    <header class="nk-header nk-header-opaque">
+
+        <!--
+        START: Navbar
+
+        Additional Classes:
+            .nk-navbar-sticky
+            .nk-navbar-transparent
+            .nk-navbar-autohide
+            .nk-navbar-light
+            .nk-navbar-no-link-effect
+        -->
+        <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-transparent nk-navbar-autohide">
+            <div class="container">
+                <div class="nk-nav-table">
+
+                    <a href="index.html" class="nk-nav-logo">
+                        <img src="assets/images/cim3.png" alt="" width="130">
+                    </a>
+
+                    <ul class="nk-nav nk-nav-right nk-nav-icons">
+                        <li class="single-icon">
+                            <a href="#" class="no-link-effect" data-nav-toggle="#nk-side-menu">Menü</a>
+                        </li>
+
+                        <!--
+                    <li class="single-icon">
+                        <a href="#" class="no-link-effect" data-nav-toggle="#nk-side-konyv">Könyv</a>
+                    </li>
+                    -->
+
+                        <li class="single-icon">
+                            <a href="#" class="no-link-effect" data-nav-toggle="#nk-side-bestiarium">Bestiárium</a>
+                        </li>
+
+                        <li class="single-icon">
+                            <a href="#" class="nk-search-toggle no-link-effect">
+                                <span class="nk-icon-search"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END: Navbar -->
+
+    </header>
+
+    <!--
+    START: Left Navbar
+
+    Additional Classes:
+        .nk-navbar-right-side
+        .nk-navbar-left-side
+        .nk-navbar-lg
+        .nk-navbar-align-center
+        .nk-navbar-align-right
+        .nk-navbar-overlay-content
+        .nk-navbar-light
+        .nk-navbar-no-link-effect
+    -->
+
+    <nav class="nk-navbar nk-navbar-side nk-navbar-left-side nk-navbar-align-center nk-navbar-overlay-content"
+        id="nk-side-menu">
+
+        <div class="nano">
+            <div class="nano-content">
+                <div class="nk-nav-table">
+
+                    <div class="nk-nav-row">
+                        <a href="index.html" class="nk-nav-logo-nem">
+                            <img src="assets/images/cim3.png" alt="Mithrill" width="150">
+                        </a>
+                        <h4>Főmenü</h4>
+                    </div>
+
+                    <div class="nk-nav-row nk-nav-row-full nk-nav-row-center">
+                        <ul class="nk-nav">
+                            <li class=" ">
+                                <a href="szabalykonyv.html">
+                                    Szabálykönyv</a>
+                            </li>
+                            <li class=" ">
+                                <a href="probadobas.html">
+                                    Próbadobás</a>
+                            </li>
+                            <li class=" ">
+                                <a href="szerencse.html">
+                                    Szerencse Dobás</a>
+                            </li>
+                            <li class=" ">
+                                <a href="terkepek.html">
+                                    Térképek</a>
+                            </li>
+                            <li class=" ">
+                                <a href="#" data-nav-toggle="#nk-side-bestiarium">Bestiárium</a>
+                            </li>
+                            <li class=" ">
+                                <a href="rolunk.html">
+                                    Rólunk</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nk-nav-row">
+                        <div class="nk-nav-footer">
+                            Powered By <span class="text-main-1">GrandCMS</span><br> Mithrill © 2019
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Left Navbar -->
+
+    <!--
+    START: Right Navbar
+
+    Additional Classes:
+        .nk-navbar-right-side
+        .nk-navbar-left-side
+        .nk-navbar-lg
+        .nk-navbar-align-center
+        .nk-navbar-align-right
+        .nk-navbar-overlay-content
+        .nk-navbar-light
+        .nk-navbar-no-link-effect
+    -->
+
+    <nav class="nk-navbar nk-navbar-side nk-navbar-right-side nk-navbar-lg nk-navbar-align-center nk-navbar-overlay-content"
+        id="nk-side-konyv">
+
+        <div class="nk-navbar-bg">
+            <div class="bg-image">
+                <img src="assets/images/bg-konyv.jpg" alt="" class="jarallax-img">
+            </div>
+        </div>
+
+        <div class="nano">
+            <div class="nano-content">
+                <div class="nk-nav-table">
+                    <div class="nk-nav-row">
+                        <a href="index.html" class="nk-nav-logo-nem">
+                            <img src="assets/images/cim3.png" alt="Mithrill" width="150">
+                        </a>
+                        <h4>Szabálykönyv</h4>
+                    </div>
+                    <div class="nk-nav-row nk-nav-row-full nk-nav-row-center">
+                        <ul class="nk-nav">
+                            <li class=" ">
+                                <a href="szabalykonyv.html">
+                                    Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nk-nav-row">
+                        <div class="nk-nav-footer">
+                            Powered By <span class="text-main-1">GrandCMS</span><br> Mithrill © 2019
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Right Navbar -->
+
+    <!--
+    START: Right Navbar
+
+    Additional Classes:
+        .nk-navbar-right-side
+        .nk-navbar-left-side
+        .nk-navbar-lg
+        .nk-navbar-align-center
+        .nk-navbar-align-right
+        .nk-navbar-overlay-content
+        .nk-navbar-light
+        .nk-navbar-no-link-effect
+    -->
+
+    <nav class="nk-navbar nk-navbar-side nk-navbar-right-side nk-navbar-lg nk-navbar-align-center nk-navbar-overlay-content"
+        id="nk-side-bestiarium">
+
+        <div class="nk-navbar-bg">
+            <div class="bg-image">
+                <img src="assets/images/mbook2.jpg" alt="" class="jarallax-img">
+            </div>
+        </div>
+
+        <div class="nano">
+            <div class="nano-content">
+                <div class="nk-nav-table">
+
+                    <div class="nk-nav-row">
+                        <a href="index.html" class="nk-nav-logo-nem">
+                            <img src="assets/images/cim3.png" alt="Mithrill" width="150">
+                        </a>
+                        <h4>Bestiárium</h4>
+                    </div>
+
+                    <div class="nk-nav-row nk-nav-row-full nk-nav-row-center">
+                        <ul class="nk-nav">
+                            <li class=" ">
+                                <a href="profiBergyilkos.html">
+                                    Profi Bérgyilkos</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nk-nav-row">
+                        <div class="nk-nav-footer">
+                            Powered By <span class="text-main-1">GrandCMS</span><br> Mithrill © 2019
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Right Navbar -->
+
+    <div class="nk-main">
+
+
+        <!-- START: Header Title -->
+        <!--
+		Additional Classes:
+			.nk-header-title-sm
+			.nk-header-title-md
+			.nk-header-title-lg
+			.nk-header-title-xl
+			.nk-header-title-full
+			.nk-header-title-parallax
+			.nk-header-title-parallax-opacity
+			.nk-header-title-boxed
+	-->
+        <div class="nk-header-title nk-header-title-lg nk-header-title-parallax nk-header-title-parallax-opacity">
+            <div class="bg-image">
+                <img src="assets/images/szornyek/Dragon-fantasy-art-photos.jpg" alt="" class="jarallax-img">
+            </div>
+            <div class="nk-header-table">
+                <div class="nk-header-table-cell">
+                    <div class="container">
+
+                        <div class="nk-header-text">
+
+                            <h1 class="nk-title display-3">Üdvözöllek Mithrill világán</h1>
+
+                            <import>test.html</import>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- END: Header Title -->
+
+
+
+        <!-- START: Rev Slider -->
+        <div class="mnt-80">
+            <div id="rev_slider_50_1_wrapper" class="rev_slider_wrapper fullscreen-container"
+                data-alias="photography-carousel48" style="padding:0px;">
+                <div id="rev_slider_50_1" class="rev_slider fullscreenbanner" style="display:none;"
+                    data-version="5.0.7">
+                    <ul>
+                        <!-- SLIDE  -->
+                        <li data-index="rs-185" data-transition="slideoverhorizontal" data-slotamount="7"
+                            data-easein="default" data-easeout="default" data-masterspeed="1500"
+                            data-thumb="assets/images/szornyek/angel1.jpg" data-rotate="0" data-saveperformance="off">
+                            <!-- MAIN IMAGE -->
+                            <img src="assets/images/szornyek/angel1.jpg" alt="" data-bgposition="center center"
+                                data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                        </li>
+                        <!-- SLIDE  -->
+                        <li data-index="rs-192" data-transition="slideoververtical" data-slotamount="7"
+                            data-easein="default" data-easeout="default" data-masterspeed="1500"
+                            data-thumb="assets/images/szornyek/thief.jpg" data-rotate="0" data-saveperformance="off">
+                            <!-- MAIN IMAGE -->
+                            <img src="assets/images/szornyek/thief.jpg" alt="" data-bgposition="center center"
+                                data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                        </li>
+                        <!-- SLIDE  -->
+                        <li data-index="rs-186" data-transition="slideoverhorizontal" data-slotamount="7"
+                            data-easein="default" data-easeout="default" data-masterspeed="1500"
+                            data-thumb="assets/images/szornyek/dragon1.jpg" data-rotate="0" data-saveperformance="off">
+                            <!-- MAIN IMAGE -->
+                            <img src="assets/images/szornyek/dragon1.jpg" alt="" data-bgposition="center center"
+                                data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                        </li>
+                        <!-- SLIDE  -->
+                        <li data-index="rs-183" data-transition="slideoververtical" data-slotamount="7"
+                            data-easein="default" data-easeout="default" data-masterspeed="1500"
+                            data-thumb="assets/images/szornyek/nomad1.jpg" data-rotate="0" data-fstransition="fade"
+                            data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off">
+                            <!-- MAIN IMAGE -->
+                            <img src="assets/images/szornyek/nomad1.jpg" alt="" data-bgposition="center center"
+                                data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                        </li>
+                    </ul>
+                    <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+                </div>
+            </div>
+        </div>
+        <!-- END: Rev Slider -->
+
+
+        <!-- START: text Block 4 -->
+        <div class="nk-box text-xs-center text-white">
+            <div class="nk-gap-5"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                        <h2 class="h1 nk-title">Mithrill egy szerepjáték.</h2>
+                        <div class="nk-gap"></div>
+                        <p>A számítógépek elterjedése előtt élték virágkorukat a szerepjátékok.<br>
+                            Egy olyan tartalmas szórakozás, mely elkísérhet egész életedben, ha te is úgy akarod. Nem
+                            számít hány éves vagy, fiú avagy lány lennél, mindig megtalálhatod a szerepjátékban azt amit
+                            keresel. Ha hőst akarsz alakítani, megteheted, ha valami mást, azt is. Egy a fontos, hogy te
+                            jól érezd magad.
+                        </p>
+
+                        <import>test2.html</import>
+                    </div>
+                </div>
+            </div>
+            <div class="nk-gap-5"></div>
+            <div class="nk-gap-4"></div>
+        </div>
+        <!-- END: text Block 4 -->
+
+    </div>
+
+    <!--
+    START: Side Buttons
+        .nk-side-buttons-visible
+-->
+    <div class="nk-side-buttons nk-side-buttons-visible">
+        <ul>
+            <li onclick="goBack();">
+                <span class="nk-btn nk-btn-lg nk-btn-icon">
+                    <span class="icon ion-ios-arrow-left"></span>
+                </span>
+            </li>
+            <li class="nk-scroll-top">
+                <span class="nk-btn nk-btn-lg nk-btn-icon">
+                    <span class="icon ion-ios-arrow-up"></span>
+                </span>
+            </li>
+        </ul>
+    </div>
+    <!-- END: Side Buttons -->
+
+
+
+    <!--
+    START: Search
+
+    Additional Classes:
+        .nk-search-light
+-->
+    <div class="nk-search">
+        <div class="container">
+            <form action="#">
+                <fieldset class="form-group nk-search-field">
+                    <input type="text" class="form-control" id="searchInput" placeholder="Search..." name="s">
+                    <label for="searchInput"><i class="ion-ios-search"></i></label>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <!-- END: Search -->
+
+    <!-- START: Scripts -->
+
+    <!-- Object Fit Polyfill -->
+    <script src="assets/vendor/object-fit-images/dist/ofi.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="assets/vendor/gsap/src/minified/TweenMax.min.js"></script>
+    <script src="assets/vendor/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
+
+    <!-- Popper -->
+    <script src="assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Sticky Kit -->
+    <script src="assets/vendor/sticky-kit/dist/sticky-kit.min.js"></script>
+
+    <!-- Jarallax -->
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax-video.min.js"></script>
+
+    <!-- imagesLoaded -->
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+
+    <!-- Flickity -->
+    <script src="assets/vendor/flickity/dist/flickity.pkgd.min.js"></script>
+
+    <!-- Isotope -->
+    <script src="assets/vendor/isotope-layout/dist/isotope.pkgd.min.js"></script>
+
+    <!-- Photoswipe -->
+    <script src="assets/vendor/photoswipe/dist/photoswipe.min.js"></script>
+    <script src="assets/vendor/photoswipe/dist/photoswipe-ui-default.min.js"></script>
+
+    <!-- Typed.js -->
+    <script src="assets/vendor/typed.js/lib/typed.min.js"></script>
+
+    <!-- Jquery Validation -->
+    <script src="assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+
+    <!-- Jquery Countdown + Moment -->
+    <script src="assets/vendor/jquery-countdown/dist/jquery.countdown.min.js"></script>
+    <script src="assets/vendor/moment/min/moment.min.js"></script>
+    <script src="assets/vendor/moment-timezone/builds/moment-timezone-with-data.min.js"></script>
+
+    <!-- Hammer.js -->
+    <script src="assets/vendor/hammerjs/hammer.min.js"></script>
+
+    <!-- NanoSroller -->
+    <script src="assets/vendor/nanoscroller/bin/javascripts/jquery.nanoscroller.js"></script>
+
+    <!-- SoundManager2 -->
+    <script src="assets/vendor/soundmanager2/script/soundmanager2-nodebug-jsmin.js"></script>
+
+    <!-- DateTimePicker -->
+    <script src="assets/vendor/jquery-datetimepicker/build/jquery.datetimepicker.full.min.js"></script>
+
+    <!-- Revolution Slider -->
+    <script type="text/javascript" src="assets/vendor/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript"
+        src="assets/vendor/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script type="text/javascript"
+        src="assets/vendor/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript"
+        src="assets/vendor/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+
+    <!-- Keymaster -->
+    <script src="assets/vendor/keymaster/keymaster.js"></script>
+
+    <!-- Summernote -->
+    <script src="assets/vendor/summernote/dist/summernote-bs4.min.js"></script>
+
+    <!-- GODLIKE -->
+    <script src="assets/js/godlike.min.js"></script>
+    <script src="assets/js/godlike-init.js"></script>
+
+    <!-- GODLIKE -->
+    <script src="assets/js/custom.js"></script>
+
+    <!-- END: Scripts -->
+
+
+
+    <script type="text/javascript">
+        var tpj = jQuery;
+        var revapi50;
+        tpj(document).ready(function () {
+            if (tpj("#rev_slider_50_1").revolution == undefined) {
+                revslider_showDoubleJqueryError("#rev_slider_50_1");
+            } else {
+                revapi50 = tpj("#rev_slider_50_1").show().revolution({
+                    sliderType: "carousel",
+                    jsFileLocation: "assets/vendor/revolution/js/",
+                    sliderLayout: "auto",
+                    dottedOverlay: "none",
+                    delay: 9000,
+                    navigation: {
+                        keyboardNavigation: "off",
+                        keyboard_direction: "horizontal",
+                        onHoverStop: "off",
+                    },
+                    carousel: {
+                        maxRotation: 8,
+                        vary_rotation: "off",
+                        minScale: 20,
+                        vary_scale: "off",
+                        horizontal_align: "center",
+                        vertical_align: "center",
+                        fadeout: "off",
+                        vary_fade: "off",
+                        maxVisibleItems: 3,
+                        infinity: "on",
+                        space: -90,
+                        stretch: "off"
+                    },
+                    responsiveLevels: [1240, 1024, 778, 480],
+                    gridwidth: [800, 600, 400, 320],
+                    gridheight: [600, 400, 320, 280],
+                    lazyType: "none",
+                    shadow: 0,
+                    spinner: "off",
+                    stopLoop: "on",
+                    stopAfterLoops: 0,
+                    stopAtSlide: 0,
+                    shuffle: "off",
+                    autoHeight: "off",
+                    fullScreenAlignForce: "off",
+                    fullScreenOffsetContainer: "",
+                    fullScreenOffset: "",
+                    disableProgressBar: "on",
+                    hideThumbsOnMobile: "off",
+                    hideSliderAtLimit: 0,
+                    hideCaptionAtLimit: 0,
+                    hideAllCaptionAtLilmit: 0,
+                    debugMode: false,
+                    fallbacks: {
+                        simplifyAll: "off",
+                        nextSlideOnWindowFocus: "off",
+                        disableFocusListener: false,
+                    }
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>

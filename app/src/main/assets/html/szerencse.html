@@ -1,0 +1,96 @@
+<div class="nk-main">
+    <!-- START: Header Title -->
+    <!--
+            Additional Classes:
+                .nk-header-title-sm
+                .nk-header-title-md
+                .nk-header-title-lg
+                .nk-header-title-xl
+                .nk-header-title-full
+                .nk-header-title-parallax
+                .nk-header-title-parallax-opacity
+                .nk-header-title-boxed
+        -->
+    <div class="nk-header-title-parallax nk-header-title-parallax-opacity">
+        <div class="bg-image op-7">
+            <img src="assets/images/szabalykonyv/vagyon.jpg" alt="" class="jarallax-img">
+        </div>
+        <div class="nk-header-table">
+            <div class="nk-header-table-cell">
+                <div class="container">
+                    <div class="text-left">
+                        <h3 class="nk-title-back">Segédlet</h3>
+                        <h2 class="nk-title h1">Szerencse Dobás</h2>
+                    </div>
+                </div>
+                <div class="nk-gap-4"></div>
+                <div class="nk-gap-4"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END: Header Title -->
+
+    <style>
+        .kockak {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .kockak img {
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+    </style>
+    <div class="container nk-blog-container-offset">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- START: Post -->
+                <div class="bg-dark-1">
+                    <!-- START: Post Text -->
+                    <div class="nk-post-text mt-0 align-justify">
+
+                        <h4>Bökj egy kockára</h4>
+
+                        <div class="kockak">
+                            <img src="assets/images/kockak/k1.png" onclick="szerencseDobas(1);">
+                            <img src="assets/images/kockak/k2.png" onclick="szerencseDobas(2);">
+                            <img src="assets/images/kockak/k3.png" onclick="szerencseDobas(3);">
+                            <img src="assets/images/kockak/k4.png" onclick="szerencseDobas(4);">
+                            <img src="assets/images/kockak/k5.png" onclick="szerencseDobas(5);">
+                            <img src="assets/images/kockak/k6.png" onclick="szerencseDobas(6);">
+                        </div>
+
+                        <h5>Szerencse: <span id="sikerek"></span></h5>
+                    </div>
+                    <!-- END: Post Text -->
+                </div>
+                <!-- END: Post -->
+                <div class="nk-gap-3"></div>
+                <div id="gallery-0" class="nk-popup-gallery nk-popup-gallery-3-col nk-isotope">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- END: main -->
+
+<script src="assets/js/dobasok.js"></script>
+
+<script>
+    function szerencseDobas(kocka) {
+        let sikerek = 0;
+        let kockakArray = [];
+
+        for (let i = 0; i < 3; i++) {
+            let dobas = Math.floor(Math.random() * 6) + 1;
+            kockakArray.push(dobas);
+            if (dobas == kocka) sikerek++;
+        }
+        $('#sikerek').html(sikerek + ' ( ' + kockakArray.join(', ') + ' )');
+
+        playSzerencseDobas(sikerek);
+    };
+</script>
